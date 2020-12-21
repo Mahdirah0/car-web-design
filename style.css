@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Yellowtail&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+.outer-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color:#2980B9;
+  /* z-index: -12; */
+}
+
+.container {
+  height: 800px;
+  width: 1400px;
+  box-shadow: 10px -10px 50px black;
+  display: flex; 
+  position: relative;
+  z-index: 10;
+}
+
+.box {
+  height: 100%;
+  width: 50%;
+}
+
+.box-1 {
+  background-color: white;
+}
+
+.box-2 {
+  background-color: #2980B9;
+}
+
+.top-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 70px;
+}
+
+.navigation {
+  display: flex;
+  width: 90%;
+  margin: auto;
+  justify-content: space-between;
+}
+
+.navigation h1 {
+  font-size: 2rem;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  width: 50%;
+}
+
+.car-image  {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  bottom: 10px;
+  left: 68%;
+  transform: translateX(-50%);
+}
+
+.car-image img {
+  height: 350px;
+  width: 700px;
+}
+
+.car-image h1 {
+  font-family: 'Yellowtail', cursive;
+  font-size: 18rem;
+  position: absolute;
+  top: -250px;
+  color: rgb(214, 214, 18);
+  z-index: -1;
+}
+
+.hero {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  height: calc(850px - 70px);
+}
+
+.hero-inner {
+  width: 90%;
+  margin-top: 40px;
+}
+
+.hero-inner h1 {
+  margin-bottom: 20px;
+  font-size: 2.5rem;
+}
+
+.hero-inner p {
+  margin-bottom: 40px;
+  line-height: 1.6;
+}
+
+.hero-inner button {
+  padding: 10px 30px;
+  border: none;
+  box-shadow: 2px 3px 5px black;
+  font-weight: bold;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  color: white;
+  background-color: #2980B9;
+}
+
+.lines {
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  width: 20%;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.lines div {
+  background-color: white;
+  width: 85px;
+  height: 100vh;
+}
